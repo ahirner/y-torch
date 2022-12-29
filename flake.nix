@@ -21,6 +21,7 @@
         (final: prev: {
           y-torch = prev.poetry2nix.mkPoetryApplication {
             projectDir = ./.;
+            preferWheels = true;
           };
         })
       ];
