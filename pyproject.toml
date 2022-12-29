@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "y-torch"
+version = "0.1.0"
+description = "test env for computer vision ML(ops)"
+authors = ["cybertreiber"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "*"
+pydantic = "*"
+#torch = "*"
+
+#[tool.poetry.dependencies.torch]
+#version = "2.0.0.dev20221229+cpu"
+#allow-prereleases = true
+#source = "torch"
+
+[tool.poetry.scripts]
+y-torch = 'y_torch:main'
+
+# errors with invalid license for pdm:
+#[tool.poetry.dev-dependencies.python-lsp-server]
+#version = "*"
+#extras = ["all"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+#[[tool.poetry.source]]
+#name = "torch"
+#url = "https://download.pytorch.org/whl/nightly/cpu"
+#default = false
+#secondary = true
+
