@@ -19,10 +19,12 @@ pydantic = "*"
 [tool.poetry.scripts]
 y-torch = 'y_torch:main'
 
-# errors with invalid license for pdm:
-#[tool.poetry.dev-dependencies.python-lsp-server]
-#version = "*"
-#extras = ["all"]
+[tool.poetry.dev-dependencies]
+python-lsp-server = "*"
+python-lsp-ruff = "*"
+
+[tool.ruff.per-file-ignores]
+"__init__.py" = ["E402"]
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
