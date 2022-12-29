@@ -13,7 +13,7 @@ nix flake update
 Update `poetry.lock`:
 
 ```shell
-nix shell -c poetry update
+nix shell -c poetry lock
 ```
 
 Run:
@@ -27,5 +27,5 @@ Develop:
 
 ```shell
 nix develop
-python -m y_torch
+y-torch
 ```
