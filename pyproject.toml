@@ -9,12 +9,11 @@ license = "MIT"
 python = "^3.10"
 numpy = "*"
 pydantic = "*"
-#torch = "*"
 
-#[tool.poetry.dependencies.torch]
-#version = "2.0.0.dev20221229+cpu"
-#allow-prereleases = true
-#source = "torch"
+[tool.poetry.dependencies.torch]
+version = "2.0.0.dev20221229+cpu"
+allow-prereleases = true
+source = "torch"
 
 [tool.poetry.scripts]
 y-torch = 'y_torch:main'
@@ -30,9 +29,9 @@ python-lsp-ruff = "*"
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
-#[[tool.poetry.source]]
-#name = "torch"
-#url = "https://download.pytorch.org/whl/nightly/cpu"
-#default = false
-#secondary = true
+[[tool.poetry.source]]
+name = "torch"
+url = "https://download.pytorch.org/whl/nightly/cpu"
+default = false
+secondary = true
 
