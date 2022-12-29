@@ -22,3 +22,10 @@ Run:
 git add .
 nix run
 ```
+
+Develop:
+
+```shell
+nix develop
+python -m y_torch
+```
