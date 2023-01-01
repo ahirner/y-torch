@@ -13,7 +13,7 @@ nix flake update
 Update `poetry.lock`:
 
 ```shell
-nix shell -c poetry lock
+nix shell .#poetry -c poetry lock
 ```
 
 Run:
